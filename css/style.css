@@ -1,0 +1,115 @@
+html{
+  position: relative;
+}
+
+section{
+  min-height: 420px;
+}
+
+.jumbotron .gambar, .jumbotron .texth1, .jumbotron .textp, .jumbotron a{
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 1s;
+}
+
+.jumbotron .texth1{
+  transform: translate(-30px, 0);
+}
+
+.jumbotron .textp{
+  transform: translate(30px, 0);
+}
+
+.jumbotron a{
+  transform: translate(0, 30px);
+}
+
+.jumbotron .gambar.muncul, .jumbotron a.muncul, .jumbotron .texth1.muncul, .jumbotron .textp.muncul{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.jumbotron{
+  height: 400px;
+  background-image: url(../img/header-bg.jpg);
+  /*biar bg diem*/
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -275px;
+  overflow: hidden;
+}
+
+.jumbotron img, .jumbotron a{
+  width: 200px;
+  border: 3px solid #eaeaea;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+.jumbotron a{
+  width: 150px;
+  border: none;
+}
+
+.jumbotron h1, .jumbotron p{
+  text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+
+.konten{
+  background-image: url(../img/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -200px;
+}
+
+.konten .container{
+  background-color: rgba(255,255,255,.9);
+}
+
+.pKiri, .pKanan{
+  opacity: 0;
+  transform: translate(-200px, 0);
+  transition: 1.5s;
+}
+
+.pKanan{
+  transform: translate(200px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.stayOnTop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+.atas{
+  min-height: 640px;
+  line-height: auto;
+}
+
+.portfolio .card{
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: .7s;
+}
+
+.portfolio .card.muncul{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.contact .justify-content-center{
+  opacity: 0;
+  transform: translate(100px, 0 );
+  transition: .7s;
+}
+
+.contact .justify-content-center.muncul{
+  opacity: 1;
+  transform: translate(0, 0);
+}
